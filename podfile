@@ -14,5 +14,5 @@ target 'JKLoginMVVMDemoSwiftTests' do
 end
 
 target ‘JKLoginMVVMDemoSwift’ do
-	pod 'ReactiveCocoa', '~> 2.0'
+    pod 'ReactiveCocoa', '~> 2.0'
 end
