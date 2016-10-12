@@ -1,0 +1,24 @@
+PODS:
+  - Nimble (5.0.0)
+  - Quick (0.10.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - ReactiveCocoa (~> 2.0)
+
+SPEC CHECKSUMS:
+  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+PODFILE CHECKSUM: 6372f90465d03e5c003b4b6bbf9b15d2b583c6a0
+
+COCOAPODS: 1.1.0.rc.2
