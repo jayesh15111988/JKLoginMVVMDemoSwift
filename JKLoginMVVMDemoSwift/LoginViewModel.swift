@@ -54,8 +54,7 @@ class LoginViewModel: NSObject {
         }
         
         let firstNameSignal = RACObserve(target: self, keyPath: "firstName")
-        let lastNameSignal = RACObserve(target: self, keyPath: "lastName")
-        
+        let lastNameSignal = RACObserve(target: self, keyPath: "lastName")        
         
         let inputValidationSignal = RACSignal.combineLatest(NSArray(array: [firstNameSignal, lastNameSignal])).map { (value) -> Bool? in
             if let inputValue = value as? RACTuple, let firstName = inputValue.first as? String, let lastName = inputValue.second as? String {

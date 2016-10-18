@@ -9,13 +9,16 @@
 import Foundation
 import ReactiveCocoa
 
-class UserAPI: NSObject {
+protocol UserAPIRequestProtocol {
+    func user(with dictionary: [String: String]) -> RACSignal
+}
+
+class UserAPI: UserAPIRequestProtocol {
     // We create a singleton shareAPIManager to handle all out API interactions.
     static let sharedInstance = UserAPI()
     
     // Once we get userDictionary, we make (dummy) API call and assume API gives us all the information plus auth token back after login.
-    func user(with dictionary: [String: String]) -> RACSignal {
-    
+    func user(with dictionary: [String: String]) -> RACSignal {    
         return RACSignal.createSignal({ (subscriber) -> RACDisposable? in
             let deadlineTime = DispatchTime.now() + 1.0
             DispatchQueue.main.asyncAfter(deadline: deadlineTime) {

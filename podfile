@@ -10,6 +10,7 @@ def testing_pods
 end
 
 target 'JKLoginMVVMDemoSwiftTests' do 
+    pod 'ReactiveCocoa', '~> 2.0'
     testing_pods
 end
 

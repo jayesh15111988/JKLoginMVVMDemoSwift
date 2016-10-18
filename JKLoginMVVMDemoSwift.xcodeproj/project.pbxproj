@@ -13,13 +13,14 @@
 		E37732BA1DAB0A7400A02754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732B91DAB0A7400A02754 /* ViewController.swift */; };
 		E37732BF1DAB0A7400A02754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37732BE1DAB0A7400A02754 /* Assets.xcassets */; };
 		E37732C21DAB0A7400A02754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37732C01DAB0A7400A02754 /* LaunchScreen.storyboard */; };
-		E37732CD1DAB0A7400A02754 /* JKLoginMVVMDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732CC1DAB0A7400A02754 /* JKLoginMVVMDemoSwiftTests.swift */; };
 		E37732D81DAB0A7400A02754 /* JKLoginMVVMDemoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732D71DAB0A7400A02754 /* JKLoginMVVMDemoSwiftUITests.swift */; };
 		E37732EA1DAC6A0100A02754 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732E91DAC6A0100A02754 /* LoginViewModel.swift */; };
 		E37732ED1DAC6E2100A02754 /* RACObserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732EC1DAC6E2100A02754 /* RACObserve.swift */; };
 		E37732EF1DAC6E4C00A02754 /* RACSignal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732EE1DAC6E4C00A02754 /* RACSignal+Extensions.swift */; };
 		E37732F11DAC6F3F00A02754 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732F01DAC6F3F00A02754 /* User.swift */; };
 		E37732F31DAC70CD00A02754 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732F21DAC70CD00A02754 /* UserAPI.swift */; };
+		E3929EAF1DADD6B000E18CF3 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3929EAE1DADD6B000E18CF3 /* UserSpec.swift */; };
+		E3929EB11DADD6BE00E18CF3 /* LoginViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3929EB01DADD6BE00E18CF3 /* LoginViewModelSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,6 @@
 		E37732C11DAB0A7400A02754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E37732C31DAB0A7400A02754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E37732C81DAB0A7400A02754 /* JKLoginMVVMDemoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKLoginMVVMDemoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E37732CC1DAB0A7400A02754 /* JKLoginMVVMDemoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKLoginMVVMDemoSwiftTests.swift; sourceTree = "<group>"; };
 		E37732CE1DAB0A7400A02754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E37732D31DAB0A7400A02754 /* JKLoginMVVMDemoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKLoginMVVMDemoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37732D71DAB0A7400A02754 /* JKLoginMVVMDemoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKLoginMVVMDemoSwiftUITests.swift; sourceTree = "<group>"; };
@@ -63,6 +63,8 @@
 		E37732EE1DAC6E4C00A02754 /* RACSignal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RACSignal+Extensions.swift"; sourceTree = "<group>"; };
 		E37732F01DAC6F3F00A02754 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E37732F21DAC70CD00A02754 /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		E3929EAE1DADD6B000E18CF3 /* UserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
+		E3929EB01DADD6BE00E18CF3 /* LoginViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +146,9 @@
 		E37732CB1DAB0A7400A02754 /* JKLoginMVVMDemoSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				E37732CC1DAB0A7400A02754 /* JKLoginMVVMDemoSwiftTests.swift */,
 				E37732CE1DAB0A7400A02754 /* Info.plist */,
+				E3929EAE1DADD6B000E18CF3 /* UserSpec.swift */,
+				E3929EB01DADD6BE00E18CF3 /* LoginViewModelSpec.swift */,
 			);
 			path = JKLoginMVVMDemoSwiftTests;
 			sourceTree = "<group>";
@@ -455,7 +458,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E37732CD1DAB0A7400A02754 /* JKLoginMVVMDemoSwiftTests.swift in Sources */,
+				E3929EAF1DADD6B000E18CF3 /* UserSpec.swift in Sources */,
+				E3929EB11DADD6BE00E18CF3 /* LoginViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
