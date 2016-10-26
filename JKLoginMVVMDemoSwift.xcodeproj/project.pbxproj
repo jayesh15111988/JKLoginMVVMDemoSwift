@@ -21,6 +21,12 @@
 		E37732F31DAC70CD00A02754 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732F21DAC70CD00A02754 /* UserAPI.swift */; };
 		E3929EAF1DADD6B000E18CF3 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3929EAE1DADD6B000E18CF3 /* UserSpec.swift */; };
 		E3929EB11DADD6BE00E18CF3 /* LoginViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3929EB01DADD6BE00E18CF3 /* LoginViewModelSpec.swift */; };
+		E39ECE411DBEDCEC002DC466 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECE401DBEDCEC002DC466 /* LandingViewController.swift */; };
+		E39ECE431DBEDEC0002DC466 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECE421DBEDEC0002DC466 /* LandingViewModel.swift */; };
+		E39ECE451DBEE7EA002DC466 /* TableDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECE441DBEE7EA002DC466 /* TableDemoViewController.swift */; };
+		E39ECE471DBEE857002DC466 /* LandingViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECE461DBEE857002DC466 /* LandingViewModelSpec.swift */; };
+		E39ECE491DBEEBEC002DC466 /* TableDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECE481DBEEBEC002DC466 /* TableDemoViewModel.swift */; };
+		E39ECE4B1DBEF42D002DC466 /* TableDemoViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECE4A1DBEF42D002DC466 /* TableDemoViewModelSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,12 @@
 		E37732F21DAC70CD00A02754 /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		E3929EAE1DADD6B000E18CF3 /* UserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
 		E3929EB01DADD6BE00E18CF3 /* LoginViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelSpec.swift; sourceTree = "<group>"; };
+		E39ECE401DBEDCEC002DC466 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		E39ECE421DBEDEC0002DC466 /* LandingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		E39ECE441DBEE7EA002DC466 /* TableDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDemoViewController.swift; sourceTree = "<group>"; };
+		E39ECE461DBEE857002DC466 /* LandingViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewModelSpec.swift; sourceTree = "<group>"; };
+		E39ECE481DBEEBEC002DC466 /* TableDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDemoViewModel.swift; sourceTree = "<group>"; };
+		E39ECE4A1DBEF42D002DC466 /* TableDemoViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDemoViewModelSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,8 @@
 				E37732CE1DAB0A7400A02754 /* Info.plist */,
 				E3929EAE1DADD6B000E18CF3 /* UserSpec.swift */,
 				E3929EB01DADD6BE00E18CF3 /* LoginViewModelSpec.swift */,
+				E39ECE461DBEE857002DC466 /* LandingViewModelSpec.swift */,
+				E39ECE4A1DBEF42D002DC466 /* TableDemoViewModelSpec.swift */,
 			);
 			path = JKLoginMVVMDemoSwiftTests;
 			sourceTree = "<group>";
@@ -174,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				E37732E91DAC6A0100A02754 /* LoginViewModel.swift */,
+				E39ECE421DBEDEC0002DC466 /* LandingViewModel.swift */,
+				E39ECE481DBEEBEC002DC466 /* TableDemoViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -190,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				E37732B91DAB0A7400A02754 /* ViewController.swift */,
+				E39ECE401DBEDCEC002DC466 /* LandingViewController.swift */,
+				E39ECE441DBEE7EA002DC466 /* TableDemoViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -446,10 +464,14 @@
 			files = (
 				E37732BA1DAB0A7400A02754 /* ViewController.swift in Sources */,
 				E37732B81DAB0A7400A02754 /* AppDelegate.swift in Sources */,
+				E39ECE411DBEDCEC002DC466 /* LandingViewController.swift in Sources */,
 				E37732F11DAC6F3F00A02754 /* User.swift in Sources */,
+				E39ECE451DBEE7EA002DC466 /* TableDemoViewController.swift in Sources */,
+				E39ECE491DBEEBEC002DC466 /* TableDemoViewModel.swift in Sources */,
 				E37732EA1DAC6A0100A02754 /* LoginViewModel.swift in Sources */,
 				E37732ED1DAC6E2100A02754 /* RACObserve.swift in Sources */,
 				E37732EF1DAC6E4C00A02754 /* RACSignal+Extensions.swift in Sources */,
+				E39ECE431DBEDEC0002DC466 /* LandingViewModel.swift in Sources */,
 				E37732F31DAC70CD00A02754 /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,8 +480,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39ECE471DBEE857002DC466 /* LandingViewModelSpec.swift in Sources */,
 				E3929EAF1DADD6B000E18CF3 /* UserSpec.swift in Sources */,
 				E3929EB11DADD6BE00E18CF3 /* LoginViewModelSpec.swift in Sources */,
+				E39ECE4B1DBEF42D002DC466 /* TableDemoViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

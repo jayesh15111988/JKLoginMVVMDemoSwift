@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Login";
+        self.title = "Login Demo";
         self.view.backgroundColor = UIColor.white
         self.view.addSubview(self.activityIndicatorView)
         
