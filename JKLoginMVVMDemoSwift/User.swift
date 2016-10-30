@@ -14,7 +14,7 @@ class User: NSObject {
     var lastName : String
     var authToken: String
     
-    override var description: String {
+    override var debugDescription: String {
         return "\(firstName)\n\(lastName)\n\(authToken)\n"
     }
     

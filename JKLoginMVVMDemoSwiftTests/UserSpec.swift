@@ -27,6 +27,13 @@ class UserSpec: QuickSpec {
                 expect(user.firstName).to(beEmpty())
                 expect(user.firstName).to(beEmpty())
             })
+            
+            it("The user object description should be matching to the expected value", closure: {
+                let user = User(dictionary: ["first_name": "Jayesh", "last_name": "Kawli", "auth_token": "11111"])
+                let actualUserDescription = user.debugDescription
+                let expectedUserDescription = "Jayesh\nKawli\n11111\n"
+                expect(actualUserDescription).to(equal(expectedUserDescription))
+            })
         }
     }
 }

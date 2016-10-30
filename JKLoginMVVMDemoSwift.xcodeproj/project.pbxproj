@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		409956D2BB95C12C66273550 /* Pods_JKLoginMVVMDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E78D8FD8FC522E9F864F98 /* Pods_JKLoginMVVMDemoSwift.framework */; };
 		D6CB64CF324643CC7812632F /* Pods_JKLoginMVVMDemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B605DF29D88E8323E800DFE7 /* Pods_JKLoginMVVMDemoSwiftTests.framework */; };
+		E30934C21DC5866000365AF0 /* TableDemoViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30934C11DC5866000365AF0 /* TableDemoViewControllerSpec.swift */; };
 		E37732B81DAB0A7400A02754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732B71DAB0A7400A02754 /* AppDelegate.swift */; };
 		E37732BA1DAB0A7400A02754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732B91DAB0A7400A02754 /* ViewController.swift */; };
 		E37732BF1DAB0A7400A02754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37732BE1DAB0A7400A02754 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		C7E78D8FD8FC522E9F864F98 /* Pods_JKLoginMVVMDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKLoginMVVMDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD551CE5A1393A56870C2105 /* Pods-JKLoginMVVMDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKLoginMVVMDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKLoginMVVMDemoSwift/Pods-JKLoginMVVMDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		DBB1CC7CF4D3401BDF3EE7D6 /* Pods-JKLoginMVVMDemoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKLoginMVVMDemoSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKLoginMVVMDemoSwiftTests/Pods-JKLoginMVVMDemoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		E30934C11DC5866000365AF0 /* TableDemoViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDemoViewControllerSpec.swift; sourceTree = "<group>"; };
 		E37732B41DAB0A7400A02754 /* JKLoginMVVMDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKLoginMVVMDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37732B71DAB0A7400A02754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E37732B91DAB0A7400A02754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				E3929EB01DADD6BE00E18CF3 /* LoginViewModelSpec.swift */,
 				E39ECE461DBEE857002DC466 /* LandingViewModelSpec.swift */,
 				E39ECE4A1DBEF42D002DC466 /* TableDemoViewModelSpec.swift */,
+				E30934C11DC5866000365AF0 /* TableDemoViewControllerSpec.swift */,
 			);
 			path = JKLoginMVVMDemoSwiftTests;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E39ECE471DBEE857002DC466 /* LandingViewModelSpec.swift in Sources */,
+				E30934C21DC5866000365AF0 /* TableDemoViewControllerSpec.swift in Sources */,
 				E3929EAF1DADD6B000E18CF3 /* UserSpec.swift in Sources */,
 				E3929EB11DADD6BE00E18CF3 /* LoginViewModelSpec.swift in Sources */,
 				E39ECE4B1DBEF42D002DC466 /* TableDemoViewModelSpec.swift in Sources */,
