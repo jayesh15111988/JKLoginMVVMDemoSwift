@@ -34,4 +34,8 @@ class TableDemoViewModel: NSObject {
     func addItem() {
         items.append("\(items.count)")
     }
+    
+    func removeItem(at index: Int) {
+        items.remove(at: index)
+    }
 }

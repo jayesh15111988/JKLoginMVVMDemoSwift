@@ -40,6 +40,18 @@ class TableDemoViewModelSpec: QuickSpec {
                 expect(tableDemoViewModel?.items.count).to(equal(2))
             })
         }
+        
+        describe("Verifying the action of removing items from array when a table view row is swiped to delete") {
+            it("When table view row is swiped to delete, it should remove an item from array at a given index", closure: {
+                tableDemoViewModel?.items = ["1", "2", "3"]
+                tableDemoViewModel?.removeItem(at: 0)
+                expect(tableDemoViewModel?.items.count).to(equal(2))
+                expect(tableDemoViewModel?.items).to(equal(["2", "3"]))
+                tableDemoViewModel?.removeItem(at: 1)
+                expect(tableDemoViewModel?.items.count).to(equal(1))
+                expect(tableDemoViewModel?.items).to(equal(["2"]))
+            })
+        }
     }
     
 }

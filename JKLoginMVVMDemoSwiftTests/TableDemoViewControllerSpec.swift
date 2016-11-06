@@ -38,6 +38,17 @@ class TableDemoViewControllerSpec: QuickSpec {
             })
         }
         
+        describe("Verifying the table view delete item delegate method") {
+            it("when the table view cell is swipe to delete, it should remove item at a given index from items collection", closure: {
+                tableDemoViewController?.tableView((tableDemoViewController?.tableView)!, commit: .delete, forRowAt: IndexPath(item: 0, section: 0))
+                expect(tableDemoViewController?.viewModel.items.count).to(equal(2))
+                expect(tableDemoViewController?.viewModel.items).to(equal(["Two", "Three"]))
+                tableDemoViewController?.tableView((tableDemoViewController?.tableView)!, commit: .delete, forRowAt: IndexPath(item: 1, section: 0))
+                expect(tableDemoViewController?.viewModel.items.count).to(equal(1))
+                expect(tableDemoViewController?.viewModel.items).to(equal(["Two"]))
+                
+            })
+        }        
     
     }
 }

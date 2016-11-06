@@ -53,7 +53,6 @@ class TableDemoViewController: UIViewController {
         RACObserve(target: self.viewModel, keyPath: "items").subscribeNext { (items) in
             self.tableView.reloadData()
         }
-        
     }
 }
 
@@ -66,5 +65,9 @@ extension TableDemoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.items.count
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        self.viewModel.removeItem(at: indexPath.row)
     }
 }

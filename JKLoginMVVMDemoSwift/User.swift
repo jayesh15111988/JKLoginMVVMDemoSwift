@@ -18,6 +18,10 @@ class User: NSObject {
         return "\(firstName)\n\(lastName)\n\(authToken)\n"
     }
     
+    override var description: String {
+        return "\(firstName)\n\(lastName)\n\(authToken)\n"
+    }
+    
     init(dictionary: [String: String]) {
         self.firstName = ""
         self.lastName = ""
