@@ -57,13 +57,12 @@ class UserPreferencesResultsController: UIViewController {
         userNameLabel.numberOfLines = 0
         userNameView.addSubview(userNameLabel)
         
-        let activityIndicatorView = UIActivityIndicatorView()
-        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicatorView.activityIndicatorViewStyle = .whiteLarge
-        activityIndicatorView.tintColor = .red
-        activityIndicatorView.hidesWhenStopped = true
-        self.view.addSubview(activityIndicatorView)
-        activityIndicatorView.startAnimating()
+        let activityIndicatorViewImage = self.loadingIndicator()
+        activityIndicatorViewImage.color = .green
+        let activityIndicatorViewRating = self.loadingIndicator()
+        activityIndicatorViewRating.color = .yellow
+        let activityIndicatorViewUsername = self.loadingIndicator()
+        activityIndicatorViewUsername.color = .purple
         
         let views = ["loadingStatusView": loadingStatusView, "sliderViewStatus": sliderViewStatus, "userNameView": userNameView, "imageView": imageView, "sliderViewLabel": sliderViewLabel, "userNameLabel": userNameLabel]
         
@@ -79,23 +78,70 @@ class UserPreferencesResultsController: UIViewController {
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[sliderViewLabel]|", options: [], metrics: nil, views: views))
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[userNameLabel]|", options: [], metrics: nil, views: views))
         
-        self.view.addConstraint(NSLayoutConstraint(item: activityIndicatorView, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1.0, constant: 0))
-        self.view.addConstraint(NSLayoutConstraint(item: activityIndicatorView, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1.0, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: activityIndicatorViewImage, attribute: .centerX, relatedBy: .equal, toItem: loadingStatusView, attribute: .centerX, multiplier: 1.0, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: activityIndicatorViewImage, attribute: .centerY, relatedBy: .equal, toItem: loadingStatusView, attribute: .centerY, multiplier: 1.0, constant: 0))
         
-        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-64-[loadingStatusView(<=300)][sliderViewStatus(>=0)][userNameView(>=0)]", options: [], metrics: nil, views: views))
+        self.view.addConstraint(NSLayoutConstraint(item: activityIndicatorViewRating, attribute: .centerX, relatedBy: .equal, toItem: sliderViewStatus, attribute: .centerX, multiplier: 1.0, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: activityIndicatorViewRating, attribute: .centerY, relatedBy: .equal, toItem: sliderViewStatus, attribute: .centerY, multiplier: 1.0, constant: 0))
         
-        self.viewModel.loadPreferencesData()
+        self.view.addConstraint(NSLayoutConstraint(item: activityIndicatorViewUsername, attribute: .centerX, relatedBy: .equal, toItem: userNameView, attribute: .centerX, multiplier: 1.0, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: activityIndicatorViewUsername, attribute: .centerY, relatedBy: .equal, toItem: userNameView, attribute: .centerY, multiplier: 1.0, constant: 0))
+        
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-64-[loadingStatusView(<=300)][sliderViewStatus(>=64)][userNameView(>=64)]", options: [], metrics: nil, views: views))
+        
+        self.viewModel.loadData()
+        
+        RACObserve(target: self.viewModel, keyPath: "loadingAllAtOnce").subscribeNext { (loadingAllAtOnce) in
+            guard let loadingAllAtOnce = loadingAllAtOnce as? Bool else { return }
+            if loadingAllAtOnce {
+                activityIndicatorViewImage.startAnimating()
+            } else {
+                activityIndicatorViewImage.startAnimating()
+                activityIndicatorViewRating.startAnimating()
+                activityIndicatorViewUsername.startAnimating()
+            }
+        }
         
         RACObserve(target: self.viewModel, keyPath: "preferenceResponse").subscribeNext({ (prefResponse) in
             if let prefResponse = prefResponse as? PreferencesResponse {
-                activityIndicatorView.stopAnimating()
+                activityIndicatorViewImage.stopAnimating()
                 imageView.image = prefResponse.image
                 sliderViewLabel.text = prefResponse.userRating
                 userNameLabel.text = prefResponse.userName
             }
         }, error: { error in
-            activityIndicatorView.stopAnimating()
+            activityIndicatorViewImage.stopAnimating()
             print("Failed with error \(error?.localizedDescription)")
         })
+        
+        RACObserve(target: self.viewModel, keyPath: "image").subscribeNext { (image) in
+            guard let image = image as? UIImage else { return }
+            print("Loaded 1")
+            imageView.image = image
+            activityIndicatorViewImage.stopAnimating()
+        }
+        
+        RACObserve(target: self.viewModel, keyPath: "rating").subscribeNext { (rating) in
+            guard let rating = rating as? String else { return }
+            print("Loaded 2")
+            sliderViewLabel.text = rating
+            activityIndicatorViewRating.stopAnimating()
+        }
+        
+        RACObserve(target: self.viewModel, keyPath: "userName").subscribeNext { (userName) in
+            guard let userName = userName as? String else { return }
+            print("Loaded 3")
+            userNameLabel.text = userName
+            activityIndicatorViewUsername.stopAnimating()
+        }
+    }
+    
+    func loadingIndicator() -> UIActivityIndicatorView {
+        let activityIndicatorView = UIActivityIndicatorView()
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatorView.activityIndicatorViewStyle = .whiteLarge
+        activityIndicatorView.hidesWhenStopped = true
+        self.view.addSubview(activityIndicatorView)
+        return activityIndicatorView
     }
 }

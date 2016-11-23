@@ -40,7 +40,7 @@ class UserAPI: UserAPIRequestProtocol {
         return RACSignal.createSignal({ (subscriber) -> RACDisposable? in
             let deadlineTime = DispatchTime.now() + 0.0
             DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-                let preference = UserPreference(switchValue: dictionary["userName"]!, sliderValue: dictionary["sliderValue"]!, userName: dictionary["switchValue"]!)
+                let preference = UserPreference(switchValue: dictionary["switchValue"]!, sliderValue: dictionary["sliderValue"]!, userName: dictionary["userName"]!)
                 subscriber?.sendNext(preference)
                 subscriber?.sendCompleted()
             }
@@ -75,7 +75,7 @@ class UserAPI: UserAPIRequestProtocol {
         return RACSignal.createSignal({ (subscriber) -> RACDisposable? in
             let deadlineTime = DispatchTime.now() + 2.0
             DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-                subscriber?.sendNext("This username is valid and maybe used for all the purposes")
+                subscriber?.sendNext("This username is valid and maybe used for all the purposes. This username is valid and maybe used for all the purposes. This username is valid and maybe used for all the purposes")
                 subscriber?.sendCompleted()
             }
             return nil
@@ -84,7 +84,7 @@ class UserAPI: UserAPIRequestProtocol {
     
     func userRatingDetails() -> RACSignal {
         return RACSignal.createSignal({ (subscriber) -> RACDisposable? in
-            let deadlineTime = DispatchTime.now() + 3.0
+            let deadlineTime = DispatchTime.now() + 1.0
             DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
                 subscriber?.sendNext("This user has lot of ratings so far and this is really good. All the time this person has done pretty good job. These ratings are important on our policy and maybe we can go back and do it again")
                 subscriber?.sendCompleted()

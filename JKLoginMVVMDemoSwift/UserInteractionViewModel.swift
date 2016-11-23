@@ -57,7 +57,7 @@ class UserInteractionViewModel: NSObject {
         
         RACObserve(target: self, keyPath: "loadAllAtOnce").subscribeNext { [weak self] (switchValue) in
             if let switchValue = switchValue as? Bool {
-                self?.inputDictionary["switchValue"] = "\(switchValue)"
+                self?.inputDictionary["switchValue"] = switchValue ? "1" : "0"
             }
         }
         
