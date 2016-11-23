@@ -13,14 +13,17 @@ class LandingViewModel: NSObject {
     
     var loginDemoButtonCommand: RACCommand?
     var tableViewDemoButtonCommand: RACCommand?
+    var userInteractionButtonCommand: RACCommand?
     
     dynamic var loginDemoButtonPressedIndicator: Bool
     dynamic var tableViewDemoButtonPressedIndicator: Bool
+    dynamic var userInteractionDemoButtonPressedIndicator: Bool
     
     override init() {
         
         loginDemoButtonPressedIndicator = false
         tableViewDemoButtonPressedIndicator = false
+        userInteractionDemoButtonPressedIndicator = false
         
         super.init()
         
@@ -31,6 +34,11 @@ class LandingViewModel: NSObject {
         
         tableViewDemoButtonCommand = RACCommand(signal: { [weak self] (signal) -> RACSignal? in
             self?.tableViewDemoButtonPressedIndicator = true
+            return RACSignal.empty()
+        })
+        
+        userInteractionButtonCommand = RACCommand(signal: { [weak self] (signal) -> RACSignal? in
+            self?.userInteractionDemoButtonPressedIndicator = true
             return RACSignal.empty()
         })
     }

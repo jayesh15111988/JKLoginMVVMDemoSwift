@@ -43,12 +43,22 @@ class LandingViewController: UIViewController {
         tableViewDemoButton.setTitle("Table View Demo", for: .normal)
         self.view.addSubview(tableViewDemoButton)
         
+        let userInteractionActionsButton = UIButton()
+        userInteractionActionsButton.translatesAutoresizingMaskIntoConstraints = false
+        userInteractionActionsButton.setTitleColor(UIColor.black, for: .normal)
+        userInteractionActionsButton.backgroundColor = UIColor.lightGray
+        userInteractionActionsButton.rac_command = self.landingViewModel.userInteractionButtonCommand
+        userInteractionActionsButton.setTitle("User Interaction Demo", for: .normal)
+        self.view.addSubview(userInteractionActionsButton)
+        
         let topLayoutGuide = self.topLayoutGuide
-        let views: [String: AnyObject] = ["loginDemoButton": loginDemoButton, "tableViewDemoButton": tableViewDemoButton, "topLayoutGuide": topLayoutGuide]
+        let views: [String: AnyObject] = ["loginDemoButton": loginDemoButton, "tableViewDemoButton": tableViewDemoButton, "topLayoutGuide": topLayoutGuide, "userInteractionActionsButton": userInteractionActionsButton]
         
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[loginDemoButton]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[tableViewDemoButton]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
-        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[topLayoutGuide]-64-[loginDemoButton(44)]-[tableViewDemoButton(44)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[userInteractionActionsButton]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
+        
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[topLayoutGuide]-64-[loginDemoButton(44)]-[tableViewDemoButton(44)]-[userInteractionActionsButton(44)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
         
         RACObserve(target: self.landingViewModel, keyPath: "loginDemoButtonPressedIndicator").subscribeNext { (loginDemoFlag) in
             if let flag = loginDemoFlag as? Bool , flag == true {
@@ -60,6 +70,13 @@ class LandingViewController: UIViewController {
         RACObserve(target: self.landingViewModel, keyPath: "tableViewDemoButtonPressedIndicator").subscribeNext { (tableViewDemoFlag) in
             if let flag = tableViewDemoFlag as? Bool , flag == true {
                 let vc = TableDemoViewController(viewModel: TableDemoViewModel())
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+        RACObserve(target: self.landingViewModel, keyPath: "userInteractionDemoButtonPressedIndicator").subscribeNext { (userInteractionDemoFlag) in
+            if let flag = userInteractionDemoFlag as? Bool , flag == true {
+                let vc = UserInteractionViewController(viewModel: UserInteractionViewModel())
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }
