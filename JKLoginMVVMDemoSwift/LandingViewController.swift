@@ -57,7 +57,6 @@ class LandingViewController: UIViewController {
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[loginDemoButton]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[tableViewDemoButton]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[userInteractionActionsButton]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
-        
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[topLayoutGuide]-64-[loginDemoButton(44)]-[tableViewDemoButton(44)]-[userInteractionActionsButton(44)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
         
         RACObserve(target: self.landingViewModel, keyPath: "loginDemoButtonPressedIndicator").subscribeNext { (loginDemoFlag) in
