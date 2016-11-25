@@ -16,6 +16,7 @@
 		E36708011DE26F5B0047590B /* UserPreferencesResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36708001DE26F5B0047590B /* UserPreferencesResultsController.swift */; };
 		E36708031DE2945E0047590B /* UserPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36708021DE2945E0047590B /* UserPreferencesViewModel.swift */; };
 		E36751111DE8F76C004AAD4E /* UserInteractionViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36751101DE8F76C004AAD4E /* UserInteractionViewModelSpec.swift */; };
+		E36751131DE8FD4B004AAD4E /* UserPreferencesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36751121DE8FD4B004AAD4E /* UserPreferencesViewModelSpec.swift */; };
 		E37732B81DAB0A7400A02754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732B71DAB0A7400A02754 /* AppDelegate.swift */; };
 		E37732BA1DAB0A7400A02754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37732B91DAB0A7400A02754 /* ViewController.swift */; };
 		E37732BF1DAB0A7400A02754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37732BE1DAB0A7400A02754 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		E36708001DE26F5B0047590B /* UserPreferencesResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesResultsController.swift; sourceTree = "<group>"; };
 		E36708021DE2945E0047590B /* UserPreferencesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewModel.swift; sourceTree = "<group>"; };
 		E36751101DE8F76C004AAD4E /* UserInteractionViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInteractionViewModelSpec.swift; sourceTree = "<group>"; };
+		E36751121DE8FD4B004AAD4E /* UserPreferencesViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewModelSpec.swift; sourceTree = "<group>"; };
 		E37732B41DAB0A7400A02754 /* JKLoginMVVMDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKLoginMVVMDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37732B71DAB0A7400A02754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E37732B91DAB0A7400A02754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				E39ECE4A1DBEF42D002DC466 /* TableDemoViewModelSpec.swift */,
 				E30934C11DC5866000365AF0 /* TableDemoViewControllerSpec.swift */,
 				E36751101DE8F76C004AAD4E /* UserInteractionViewModelSpec.swift */,
+				E36751121DE8FD4B004AAD4E /* UserPreferencesViewModelSpec.swift */,
 			);
 			path = JKLoginMVVMDemoSwiftTests;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				E30934C21DC5866000365AF0 /* TableDemoViewControllerSpec.swift in Sources */,
 				E3929EAF1DADD6B000E18CF3 /* UserSpec.swift in Sources */,
 				E3929EB11DADD6BE00E18CF3 /* LoginViewModelSpec.swift in Sources */,
+				E36751131DE8FD4B004AAD4E /* UserPreferencesViewModelSpec.swift in Sources */,
 				E39ECE4B1DBEF42D002DC466 /* TableDemoViewModelSpec.swift in Sources */,
 				E36751111DE8F76C004AAD4E /* UserInteractionViewModelSpec.swift in Sources */,
 			);

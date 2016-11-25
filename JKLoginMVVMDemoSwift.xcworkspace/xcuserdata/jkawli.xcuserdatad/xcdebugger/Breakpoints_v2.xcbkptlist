@@ -992,7 +992,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JKLoginMVVMDemoSwift/UserPreferencesViewModel.swift"
@@ -1008,7 +1008,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JKLoginMVVMDemoSwift/UserPreference.swift"
@@ -1024,7 +1024,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JKLoginMVVMDemoSwift/UserPreferencesViewModel.swift"
@@ -1040,7 +1040,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JKLoginMVVMDemoSwift/UserPreferencesViewModel.swift"
@@ -1056,7 +1056,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JKLoginMVVMDemoSwift/UserPreferencesViewModel.swift"
@@ -1072,7 +1072,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JKLoginMVVMDemoSwift/UserAPI.swift"
@@ -1088,7 +1088,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JKLoginMVVMDemoSwiftTests/UserInteractionViewModelSpec.swift"
@@ -1101,14 +1101,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "JKLoginMVVMDemoSwiftTests.UserInteractionViewModelSpec.(spec () -&gt; ()).(closure #2).(closure #1)"
                   moduleName = "JKLoginMVVMDemoSwiftTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jkawli/Desktop/JKLoginMVVMDemoSwift/JKLoginMVVMDemoSwiftTests/UserInteractionViewModelSpec.swift"
-                  timestampString = "501807725.81687"
+                  timestampString = "501809301.282453"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -1116,14 +1116,14 @@
                   offsetFromSymbolStart = "644">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "JKLoginMVVMDemoSwiftTests.UserInteractionViewModelSpec.(spec () -&gt; ()).(closure #2).(closure #1).(implicit closure #2)"
                   moduleName = "JKLoginMVVMDemoSwiftTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jkawli/Desktop/JKLoginMVVMDemoSwift/JKLoginMVVMDemoSwiftTests/UserInteractionViewModelSpec.swift"
-                  timestampString = "501807725.818257"
+                  timestampString = "501809301.284073"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -1131,6 +1131,198 @@
                   offsetFromSymbolStart = "41">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+            timestampString = "501809289.530004"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "spec()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JKLoginMVVMDemoSwiftTests.UserPreferencesViewModelSpec.(spec () -&gt; ()).(closure #1).(closure #2).(closure #1)"
+                  moduleName = "JKLoginMVVMDemoSwiftTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkawli/Desktop/JKLoginMVVMDemoSwift/JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+                  timestampString = "501809420.674033"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JKLoginMVVMDemoSwiftTests.UserPreferencesViewModelSpec.(spec () -&gt; ()).(closure #1).(closure #2).(closure #1).(implicit closure #1)"
+                  moduleName = "JKLoginMVVMDemoSwiftTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkawli/Desktop/JKLoginMVVMDemoSwift/JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+                  timestampString = "501809420.676851"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+            timestampString = "501809410.027167"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "spec()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+            timestampString = "501809411.247727"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "spec()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JKLoginMVVMDemoSwiftTests.UserPreferencesViewModelSpec.(spec () -&gt; ()).(closure #2).(closure #2).(closure #1)"
+                  moduleName = "JKLoginMVVMDemoSwiftTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkawli/Desktop/JKLoginMVVMDemoSwift/JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+                  timestampString = "501809420.682164"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JKLoginMVVMDemoSwiftTests.UserPreferencesViewModelSpec.(spec () -&gt; ()).(closure #2).(closure #2).(closure #1).(implicit closure #1)"
+                  moduleName = "JKLoginMVVMDemoSwiftTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkawli/Desktop/JKLoginMVVMDemoSwift/JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+                  timestampString = "501809420.683753"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+            timestampString = "501809559.038706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "spec()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JKLoginMVVMDemoSwiftTests.UserPreferencesViewModelSpec.(spec () -&gt; ()).(closure #2).(closure #3).(closure #1)"
+                  moduleName = "JKLoginMVVMDemoSwiftTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkawli/Desktop/JKLoginMVVMDemoSwift/JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+                  timestampString = "501809559.876416"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1955">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JKLoginMVVMDemoSwiftTests.UserPreferencesViewModelSpec.(spec () -&gt; ()).(closure #2).(closure #3).(closure #1).(implicit closure #4)"
+                  moduleName = "JKLoginMVVMDemoSwiftTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkawli/Desktop/JKLoginMVVMDemoSwift/JKLoginMVVMDemoSwiftTests/UserPreferencesViewModelSpec.swift"
+                  timestampString = "501809559.877741"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JKLoginMVVMDemoSwift/UserPreferencesViewModel.swift"
+            timestampString = "501809555.273216"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "loadStepByStepPreferencesData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JKLoginMVVMDemoSwift/UserPreferencesViewModel.swift"
+            timestampString = "501809558.370324"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "loadStepByStepPreferencesData()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

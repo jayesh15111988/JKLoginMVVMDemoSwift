@@ -39,8 +39,7 @@ class UserInteractionViewModelSpec: QuickSpec {
             }
             
             it("when user changes the slider value, view model should store its value in dictionary under key sliderValue") {
-                let sliderValue: Double = 3
-                userInteractionViewModel?.sliderValue = sliderValue
+                userInteractionViewModel?.sliderValue = 3.0
                 expect(userInteractionViewModel?.inputDictionary.count).to(equal(1))
                 expect(userInteractionViewModel?.inputDictionary["sliderValue"]).to(equal("3.0"))
             }
@@ -55,8 +54,7 @@ class UserInteractionViewModelSpec: QuickSpec {
         describe("Verifying the behavior when user presses done button") {
             it("After user presses done button, mode should populate preference object with input values given by user in previous step") {
                 userInteractionViewModel?.userName = "abc"
-                let sliderValue: Double = 3
-                userInteractionViewModel?.sliderValue = sliderValue
+                userInteractionViewModel?.sliderValue = 3.0
                 userInteractionViewModel?.loadAllAtOnce = true
                 _ = try? userInteractionViewModel?.doneButtonCommandAction?.execute(nil).asynchronouslyWaitUntilCompleted()
                 expect(userInteractionViewModel?.preference).toEventuallyNot(beNil(), timeout: 5.0)
